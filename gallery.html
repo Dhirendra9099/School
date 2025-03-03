@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Himchuli School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/IMG-20250303-WA0004.jpg" alt="Himchuli School Logo" class="school-logo">
+                <div class="logo-text">
+                    <span class="school-name">HIMCHULI</span>
+                    <span class="school-type">Academy</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="notice.html">Notice</a>
+                <a href="gallery.html" class="active">Gallery</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero Section -->
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600');">
+        <h1>Our Gallery</h1>
+        <p>Capturing Moments of Excellence</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <h2>Photo Gallery</h2>
+            <p>Explore our school's vibrant community and facilities through our photo collection</p>
+        </div>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="campus">Campus</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="academic">Academic</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Campus Images -->
+            <div class="gallery-item campus">
+                <img src="images/IMG-20250303-WA0012.jpg" alt="School Campus">
+                <div class="gallery-overlay">
+                    <h3>Modern Campus</h3>
+                    <p>Our state-of-the-art facilities</p>
+                    <button class="view-btn"><i class="fas fa-expand"></i> View</button>
+                </div>
+            </div>
+
+            <!-- Events Images -->
+            <div class="gallery-item events">
+                <img src="images/IMG-20250303-WA0013.jpg" alt="School Events">
+                <div class="gallery-overlay">
+                    <h3>Annual Day</h3>
+                    <p>Cultural celebrations</p>
+                    <button class="view-btn"><i class="fas fa-expand"></i> View</button>
+                </div>
+            </div>
+
+            <div class="gallery-item academic">
+                <img src="images/IMG-20250303-WA0015.jpg" alt="Academic Activities">
+                <div class="gallery-overlay">
+                    <h3>Academic Excellence</h3>
+                    <p>Focused learning environment</p>
+                </div>
+            </div>
+
+            <div class="gallery-item events">
+                <img src="images/IMG-20250303-WA0016.jpg" alt="School Programs">
+                <div class="gallery-overlay">
+                    <h3>School Programs</h3>
+                    <p>Engaging activities</p>
+                </div>
+            </div>
+
+            <div class="gallery-item sports">
+                <img src="images/IMG-20250303-WA0018.jpg" alt="Sports Activities">
+                <div class="gallery-overlay">
+                    <h3>Sports</h3>
+                    <p>Physical development</p>
+                </div>
+            </div>
+
+            <div class="gallery-item campus">
+                <img src="images/IMG-20250303-WA0019.jpg" alt="School Infrastructure">
+                <div class="gallery-overlay">
+                    <h3>Infrastructure</h3>
+                    <p>Modern facilities</p>
+                </div>
+            </div>
+
+            <div class="gallery-item events">
+                <img src="images/IMG-20250303-WA0020.jpg" alt="Cultural Events">
+                <div class="gallery-overlay">
+                    <h3>Cultural Events</h3>
+                    <p>Celebrating diversity</p>
+                </div>
+            </div>
+
+            <div class="gallery-item academic">
+                <img src="images/IMG-20250303-WA0021.jpg" alt="Learning Activities">
+                <div class="gallery-overlay">
+                    <h3>Learning Activities</h3>
+                    <p>Interactive education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" style="display: none;">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="Gallery Image" id="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Himchuli School</h3>
+                <p>Established in 1990, Himchuli School is committed to providing quality education with modern facilities and experienced faculty. Our mission is to shape future leaders through holistic development.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="notice.html"><i class="fas fa-chevron-right"></i> Notices</a></li>
+                    <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Suryabinayak-8, Bhaktapur<br>Bagmati Province, Nepal</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+977-01-6612345<br>+977-9841234567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@himchulischool.com<br>admission@himchulischool.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates and news.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 Himchuli School. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
